@@ -5,3 +5,10 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 EOF
 
 sysctl --system
+#############################################################
+/etc/default/grub
+
+mudar GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+para GRUB_CMDLINE_LINUX_DEFAULT="quiet splash ipv6.disable=1"
+sudo update-grub
+reboot
