@@ -1,0 +1,3 @@
+sudo pvcreate /dev/sda4
+
+sudo vgcreate cinder-volumes /dev/sda4
